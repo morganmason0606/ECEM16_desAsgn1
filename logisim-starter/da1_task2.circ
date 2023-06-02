@@ -139,7 +139,7 @@
       <a name="initial" val="0x28"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(220,380)" name="Tunnel">
+    <comp lib="0" loc="(210,380)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="sign"/>
     </comp>
@@ -167,6 +167,7 @@
     </comp>
     <comp lib="0" loc="(390,320)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="initial" val="0x1"/>
       <a name="width" val="7"/>
     </comp>
     <comp lib="0" loc="(440,150)" name="Tunnel">
@@ -358,12 +359,12 @@
     <wire from="(200,400)" to="(200,510)"/>
     <wire from="(200,510)" to="(270,510)"/>
     <wire from="(210,130)" to="(300,130)"/>
+    <wire from="(210,380)" to="(210,400)"/>
     <wire from="(210,400)" to="(210,450)"/>
     <wire from="(210,450)" to="(210,500)"/>
     <wire from="(210,450)" to="(270,450)"/>
     <wire from="(210,500)" to="(240,500)"/>
     <wire from="(210,70)" to="(210,130)"/>
-    <wire from="(220,380)" to="(220,400)"/>
     <wire from="(220,40)" to="(220,90)"/>
     <wire from="(220,400)" to="(220,410)"/>
     <wire from="(220,410)" to="(220,460)"/>
