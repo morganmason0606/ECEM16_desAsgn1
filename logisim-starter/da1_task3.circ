@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.7.2" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.7.2(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <lib desc="file#M16 Components.circ" name="12"/>
+  <main name="DUT"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Menu Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="DUT">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="DUT"/>
+    <a name="simulationFrequency" val="4.0"/>
+    <comp lib="0" loc="(100,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="X"/>
+    </comp>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(100,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp lib="0" loc="(750,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Z"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="8" loc="(431,19)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="Please put your deisgn below. You may also use subcircuits."/>
+    </comp>
+    <comp lib="8" loc="(431,38)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="However, do not move, rename, add, or delete any pins."/>
+    </comp>
+    <comp lib="8" loc="(439,220)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Feel free to remove this text."/>
+    </comp>
+    <comp lib="8" loc="(441,199)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Put your design below and wire it up to the pins."/>
+    </comp>
+    <wire from="(100,110)" to="(130,110)"/>
+    <wire from="(100,140)" to="(130,140)"/>
+    <wire from="(100,170)" to="(130,170)"/>
+    <wire from="(720,110)" to="(750,110)"/>
+  </circuit>
+  <circuit name="TB">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="TB"/>
+    <a name="simulationFrequency" val="4.0"/>
+    <comp lib="0" loc="(130,270)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(80,430)" name="Clock">
+      <a name="highDuration" val="2"/>
+      <a name="label" val="clk"/>
+      <a name="lowDuration" val="2"/>
+    </comp>
+    <comp lib="0" loc="(80,460)" name="Clock">
+      <a name="label" val="sysclk"/>
+    </comp>
+    <comp lib="0" loc="(830,350)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x18"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(850,400)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="bit0" val="1"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="1" loc="(410,440)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(780,250)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="12" loc="(340,430)" name="MyPOR"/>
+    <comp lib="4" loc="(160,160)" name="Counter">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="TimeIndex"/>
+      <a name="max" val="0x1f"/>
+      <a name="ongoal" val="stay"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="4" loc="(400,260)" name="ROM">
+      <a name="addrWidth" val="5"/>
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="contents">addr/data: 5 1
+0
+</a>
+      <a name="dataWidth" val="1"/>
+      <a name="label" val="TestTraceMemory"/>
+    </comp>
+    <comp lib="5" loc="(330,500)" name="Button">
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="5" loc="(860,410)" name="TTY">
+      <a name="bg" val="#9e9e9e40"/>
+    </comp>
+    <comp lib="5" loc="(950,210)" name="LED">
+      <a name="label" val="DONE"/>
+    </comp>
+    <comp lib="8" loc="(329,45)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="DO NOT MODIFY THIS"/>
+    </comp>
+    <comp lib="8" loc="(334,109)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Edit ROM with input trace of 32 bits"/>
+    </comp>
+    <comp lib="8" loc="(352,79)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="YOU MAY TEST YOUR CIRCUITS USING THIS TO MAKE SURE YOU HAVE NOT ALTERED PIN OUT"/>
+    </comp>
+    <comp loc="(770,330)" name="DUT"/>
+    <wire from="(100,190)" to="(100,390)"/>
+    <wire from="(100,190)" to="(160,190)"/>
+    <wire from="(100,390)" to="(650,390)"/>
+    <wire from="(130,270)" to="(160,270)"/>
+    <wire from="(150,240)" to="(150,410)"/>
+    <wire from="(150,240)" to="(160,240)"/>
+    <wire from="(150,410)" to="(150,430)"/>
+    <wire from="(150,410)" to="(630,410)"/>
+    <wire from="(150,430)" to="(240,430)"/>
+    <wire from="(330,500)" to="(350,500)"/>
+    <wire from="(340,430)" to="(380,430)"/>
+    <wire from="(350,210)" to="(780,210)"/>
+    <wire from="(350,270)" to="(400,270)"/>
+    <wire from="(350,450)" to="(350,500)"/>
+    <wire from="(350,450)" to="(380,450)"/>
+    <wire from="(410,440)" to="(650,440)"/>
+    <wire from="(630,350)" to="(630,410)"/>
+    <wire from="(630,350)" to="(690,350)"/>
+    <wire from="(630,410)" to="(860,410)"/>
+    <wire from="(640,330)" to="(690,330)"/>
+    <wire from="(650,370)" to="(650,390)"/>
+    <wire from="(650,370)" to="(690,370)"/>
+    <wire from="(650,390)" to="(650,440)"/>
+    <wire from="(650,440)" to="(880,440)"/>
+    <wire from="(770,330)" to="(800,330)"/>
+    <wire from="(780,210)" to="(780,220)"/>
+    <wire from="(780,210)" to="(950,210)"/>
+    <wire from="(780,250)" to="(780,430)"/>
+    <wire from="(780,430)" to="(870,430)"/>
+    <wire from="(80,430)" to="(150,430)"/>
+    <wire from="(800,330)" to="(800,390)"/>
+    <wire from="(800,390)" to="(830,390)"/>
+    <wire from="(830,350)" to="(830,380)"/>
+    <wire from="(850,400)" to="(860,400)"/>
+    <wire from="(870,420)" to="(870,430)"/>
+    <wire from="(880,420)" to="(880,440)"/>
+  </circuit>
+  <circuit name="TBRANDOM">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="TBRANDOM"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="4.0"/>
+    <comp lib="0" loc="(140,220)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(80,430)" name="Clock">
+      <a name="highDuration" val="2"/>
+      <a name="label" val="clk"/>
+      <a name="lowDuration" val="2"/>
+    </comp>
+    <comp lib="0" loc="(80,460)" name="Clock">
+      <a name="label" val="sysclk"/>
+    </comp>
+    <comp lib="0" loc="(830,350)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x18"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(850,400)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="bit0" val="1"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="1" loc="(410,440)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(780,250)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="12" loc="(340,430)" name="MyPOR"/>
+    <comp lib="4" loc="(170,110)" name="Counter">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="TimeIndex"/>
+      <a name="ongoal" val="stay"/>
+    </comp>
+    <comp lib="4" loc="(490,250)" name="Random">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="5" loc="(330,500)" name="Button">
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="5" loc="(860,410)" name="TTY">
+      <a name="bg" val="#9e9e9e40"/>
+    </comp>
+    <comp lib="5" loc="(950,210)" name="LED">
+      <a name="label" val="DONE"/>
+    </comp>
+    <comp lib="8" loc="(329,45)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="DO NOT MODIFY THIS"/>
+    </comp>
+    <comp lib="8" loc="(352,79)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="YOU MAY TEST YOUR CIRCUITS USING THIS TO MAKE SURE YOU HAVE NOT ALTERED PIN OUT"/>
+    </comp>
+    <comp loc="(770,330)" name="DUT"/>
+    <wire from="(100,140)" to="(100,390)"/>
+    <wire from="(100,140)" to="(170,140)"/>
+    <wire from="(100,390)" to="(440,390)"/>
+    <wire from="(140,220)" to="(170,220)"/>
+    <wire from="(150,190)" to="(150,410)"/>
+    <wire from="(150,190)" to="(170,190)"/>
+    <wire from="(150,410)" to="(150,430)"/>
+    <wire from="(150,410)" to="(480,410)"/>
+    <wire from="(150,430)" to="(240,430)"/>
+    <wire from="(330,500)" to="(350,500)"/>
+    <wire from="(340,430)" to="(380,430)"/>
+    <wire from="(350,450)" to="(350,500)"/>
+    <wire from="(350,450)" to="(380,450)"/>
+    <wire from="(360,160)" to="(780,160)"/>
+    <wire from="(410,440)" to="(650,440)"/>
+    <wire from="(440,280)" to="(440,390)"/>
+    <wire from="(440,280)" to="(490,280)"/>
+    <wire from="(440,390)" to="(650,390)"/>
+    <wire from="(480,300)" to="(480,410)"/>
+    <wire from="(480,300)" to="(490,300)"/>
+    <wire from="(480,410)" to="(630,410)"/>
+    <wire from="(570,330)" to="(690,330)"/>
+    <wire from="(630,350)" to="(630,410)"/>
+    <wire from="(630,350)" to="(690,350)"/>
+    <wire from="(630,410)" to="(860,410)"/>
+    <wire from="(650,370)" to="(650,390)"/>
+    <wire from="(650,370)" to="(690,370)"/>
+    <wire from="(650,390)" to="(650,440)"/>
+    <wire from="(650,440)" to="(880,440)"/>
+    <wire from="(770,330)" to="(800,330)"/>
+    <wire from="(780,160)" to="(780,210)"/>
+    <wire from="(780,210)" to="(780,220)"/>
+    <wire from="(780,210)" to="(950,210)"/>
+    <wire from="(780,250)" to="(780,430)"/>
+    <wire from="(780,430)" to="(870,430)"/>
+    <wire from="(80,430)" to="(150,430)"/>
+    <wire from="(800,330)" to="(800,390)"/>
+    <wire from="(800,390)" to="(830,390)"/>
+    <wire from="(830,350)" to="(830,380)"/>
+    <wire from="(850,400)" to="(860,400)"/>
+    <wire from="(870,420)" to="(870,430)"/>
+    <wire from="(880,420)" to="(880,440)"/>
+  </circuit>
+</project>
