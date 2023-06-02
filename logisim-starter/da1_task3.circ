@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.7.2" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.7.2(https://github.com/logisim-evolution/).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -72,25 +72,80 @@
       <a name="label" val="Z"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="8" loc="(431,19)" name="Text">
+    <comp lib="1" loc="(330,240)" name="NAND Gate"/>
+    <comp lib="1" loc="(330,380)" name="NAND Gate"/>
+    <comp lib="1" loc="(330,530)" name="NAND Gate"/>
+    <comp lib="4" loc="(370,230)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(370,370)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(370,520)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(570,230)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(570,360)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(570,470)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="8" loc="(430,15)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="Please put your deisgn below. You may also use subcircuits."/>
     </comp>
-    <comp lib="8" loc="(431,38)" name="Text">
+    <comp lib="8" loc="(430,35)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="However, do not move, rename, add, or delete any pins."/>
     </comp>
-    <comp lib="8" loc="(439,220)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="Feel free to remove this text."/>
-    </comp>
-    <comp lib="8" loc="(441,199)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="Put your design below and wire it up to the pins."/>
-    </comp>
     <wire from="(100,110)" to="(130,110)"/>
-    <wire from="(100,140)" to="(130,140)"/>
-    <wire from="(100,170)" to="(130,170)"/>
+    <wire from="(100,140)" to="(350,140)"/>
+    <wire from="(100,170)" to="(340,170)"/>
+    <wire from="(260,180)" to="(260,260)"/>
+    <wire from="(260,180)" to="(440,180)"/>
+    <wire from="(260,260)" to="(270,260)"/>
+    <wire from="(260,330)" to="(260,400)"/>
+    <wire from="(260,330)" to="(420,330)"/>
+    <wire from="(260,400)" to="(270,400)"/>
+    <wire from="(260,470)" to="(260,550)"/>
+    <wire from="(260,470)" to="(430,470)"/>
+    <wire from="(260,550)" to="(270,550)"/>
+    <wire from="(270,190)" to="(270,220)"/>
+    <wire from="(270,190)" to="(430,190)"/>
+    <wire from="(270,340)" to="(270,360)"/>
+    <wire from="(270,340)" to="(430,340)"/>
+    <wire from="(270,490)" to="(270,510)"/>
+    <wire from="(270,490)" to="(440,490)"/>
+    <wire from="(330,240)" to="(360,240)"/>
+    <wire from="(330,380)" to="(360,380)"/>
+    <wire from="(330,530)" to="(360,530)"/>
+    <wire from="(340,170)" to="(340,300)"/>
+    <wire from="(340,300)" to="(340,440)"/>
+    <wire from="(340,300)" to="(390,300)"/>
+    <wire from="(340,440)" to="(340,590)"/>
+    <wire from="(340,440)" to="(390,440)"/>
+    <wire from="(340,590)" to="(390,590)"/>
+    <wire from="(350,140)" to="(350,280)"/>
+    <wire from="(350,280)" to="(350,420)"/>
+    <wire from="(350,280)" to="(360,280)"/>
+    <wire from="(350,420)" to="(350,570)"/>
+    <wire from="(350,420)" to="(360,420)"/>
+    <wire from="(350,570)" to="(360,570)"/>
+    <wire from="(390,290)" to="(390,300)"/>
+    <wire from="(390,430)" to="(390,440)"/>
+    <wire from="(390,580)" to="(390,590)"/>
+    <wire from="(420,280)" to="(420,330)"/>
+    <wire from="(420,280)" to="(430,280)"/>
+    <wire from="(420,420)" to="(430,420)"/>
+    <wire from="(420,570)" to="(440,570)"/>
+    <wire from="(430,190)" to="(430,280)"/>
+    <wire from="(430,340)" to="(430,420)"/>
+    <wire from="(430,420)" to="(430,470)"/>
+    <wire from="(440,180)" to="(440,490)"/>
+    <wire from="(440,490)" to="(440,570)"/>
     <wire from="(720,110)" to="(750,110)"/>
   </circuit>
   <circuit name="TB">
@@ -158,15 +213,15 @@
     <comp lib="5" loc="(950,210)" name="LED">
       <a name="label" val="DONE"/>
     </comp>
-    <comp lib="8" loc="(329,45)" name="Text">
+    <comp lib="8" loc="(325,45)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="DO NOT MODIFY THIS"/>
     </comp>
-    <comp lib="8" loc="(334,109)" name="Text">
+    <comp lib="8" loc="(330,105)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Edit ROM with input trace of 32 bits"/>
     </comp>
-    <comp lib="8" loc="(352,79)" name="Text">
+    <comp lib="8" loc="(350,75)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="YOU MAY TEST YOUR CIRCUITS USING THIS TO MAKE SURE YOU HAVE NOT ALTERED PIN OUT"/>
     </comp>
@@ -267,11 +322,11 @@
     <comp lib="5" loc="(950,210)" name="LED">
       <a name="label" val="DONE"/>
     </comp>
-    <comp lib="8" loc="(329,45)" name="Text">
+    <comp lib="8" loc="(325,45)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="DO NOT MODIFY THIS"/>
     </comp>
-    <comp lib="8" loc="(352,79)" name="Text">
+    <comp lib="8" loc="(350,75)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="YOU MAY TEST YOUR CIRCUITS USING THIS TO MAKE SURE YOU HAVE NOT ALTERED PIN OUT"/>
     </comp>

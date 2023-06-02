@@ -81,9 +81,8 @@
       <a name="label" val="D0"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(120,350)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="initial" val="0x50"/>
+    <comp lib="0" loc="(120,350)" name="Constant">
+      <a name="value" val="0x50"/>
       <a name="width" val="7"/>
     </comp>
     <comp lib="0" loc="(130,780)" name="Tunnel">
@@ -115,28 +114,24 @@
       <a name="fanout" val="7"/>
       <a name="incoming" val="7"/>
     </comp>
-    <comp lib="0" loc="(180,100)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="initial" val="0x14"/>
+    <comp lib="0" loc="(180,100)" name="Constant">
+      <a name="value" val="0x14"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(180,130)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="initial" val="0xa"/>
+    <comp lib="0" loc="(180,130)" name="Constant">
+      <a name="value" val="0xa"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(180,160)" name="Pin">
-      <a name="appearance" val="classic"/>
+    <comp lib="0" loc="(180,160)" name="Constant">
+      <a name="value" val="0x0"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(180,40)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="initial" val="0x50"/>
+    <comp lib="0" loc="(180,40)" name="Constant">
+      <a name="value" val="0x50"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(180,70)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="initial" val="0x28"/>
+    <comp lib="0" loc="(180,70)" name="Constant">
+      <a name="value" val="0x28"/>
       <a name="width" val="7"/>
     </comp>
     <comp lib="0" loc="(210,380)" name="Tunnel">
@@ -165,9 +160,7 @@
       <a name="label" val="uval"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(390,320)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="initial" val="0x1"/>
+    <comp lib="0" loc="(390,320)" name="Constant">
       <a name="width" val="7"/>
     </comp>
     <comp lib="0" loc="(440,150)" name="Tunnel">
